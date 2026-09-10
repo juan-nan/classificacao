@@ -1,4 +1,3 @@
-// Cliente do supermercado, caracterizado pelo nome e pelo CPF.
 public class Cliente {
 
     private String nome;

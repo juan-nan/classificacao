@@ -1,4 +1,3 @@
-// Um item de um pedido: liga um Produto a uma quantidade desejada pelo cliente.
 public class Item {
 
     private Produto produto;

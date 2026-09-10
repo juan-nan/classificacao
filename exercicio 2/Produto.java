@@ -1,4 +1,3 @@
-// Representa um produto vendido pelo supermercado.
 public class Produto {
 
     private Descricao descricao;
@@ -33,7 +32,7 @@ public class Produto {
 
     public void setQuantidadeEstoque(int quantidadeEstoque) {
         this.quantidadeEstoque = quantidadeEstoque;
-        // falta validar quando vier negativo
+        // falta validar 
     }
 
     public boolean baixarEstoque(int quantidade) {

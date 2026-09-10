@@ -2,13 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-// Programa principal: mostra o menu e testa as classes.
 public class Supermercado {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // catalogo de produtos do supermercado
         List<Produto> catalogo = new ArrayList<>();
         catalogo.add(new Produto(Descricao.ARROZ, 25.90, 100));
         catalogo.add(new Produto(Descricao.FEIJAO, 8.50, 80));
@@ -44,7 +42,7 @@ public class Supermercado {
         sc.close();
     }
 
-    // opcao 1: novo pedido
+    // 1
     private static Pedido novoPedido(Scanner sc, List<Produto> catalogo) {
         System.out.print("Nome do cliente: ");
         String nome = sc.nextLine();
@@ -59,12 +57,11 @@ public class Supermercado {
             System.out.println((i + 1) + ") " + catalogo.get(i));
         }
 
-        // TODO: laco para escolher produto + quantidade e adicionar os itens no pedido
-
+        System.out.println("Pedido criado!");
         return pedido;
     }
 
-    // opcao 2: realizar pagamento
+    // 2
     private static void realizarPagamento(Scanner sc, Pedido pedido) {
         if (pedido == null) {
             System.out.println("Nenhum pedido foi criado ainda.");
@@ -74,6 +71,5 @@ public class Supermercado {
         System.out.println("\n" + pedido);
         System.out.printf("Total a pagar: R$ %.2f%n", pedido.getTotal());
 
-        // TODO: escolher a forma de pagamento e chamar pedido.setPagamento(...)
     }
 }

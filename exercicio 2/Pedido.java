@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Pedido feito por um cliente, composto por varios itens.
 public class Pedido {
 
     private Cliente cliente;
